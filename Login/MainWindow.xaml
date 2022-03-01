@@ -1,0 +1,21 @@
+﻿<Window x:Class="Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="80">
+        <Label FontSize="28" Foreground="Blue">Inicio de sesion</Label>
+        <Label FontSize="18" >Nombre del usuario</Label>
+        <TextBox  Padding="8">Nombre de usuario</TextBox>
+        <Label>Contraseña</Label>
+        <TextBox Padding="8">Contraseña</TextBox>
+        <DockPanel VerticalAlignment="Center" >
+            <CheckBox Margin="16" FontSize="16" VerticalAlignment="Center">Recuerdame</CheckBox>
+            <Label FontFamily="16" Foreground="blue" HorizontalAlignment="Right" VerticalAlignment="Center">Olvidaste tu contrasena</Label>
+        </DockPanel>
+        <Button FontFamily="18" Foreground="White"  Background="DodgerBlue" Padding="8">Entrar</Button>
+    </StackPanel>
+</Window>

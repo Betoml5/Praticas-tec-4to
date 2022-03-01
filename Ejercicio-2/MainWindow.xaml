@@ -1,0 +1,80 @@
+﻿<Window x:Class="Ejercicio_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="StackPanel">
+                <Setter Property="Margin" Value="10"></Setter>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="Padding" Value="8,0,0,0"></Setter>
+                <Setter Property="FontSize" Value="14"></Setter>
+                <Setter Property="Margin" Value="0,2"></Setter>
+            </Style>
+            <Style TargetType="TextBlock" x:Key="titulo">
+                <Setter Property="FontSize" Value="16"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                <Setter Property="Padding" Value="0"></Setter>
+                <Setter Property="TextWrapping" Value="Wrap"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height=".7*"></RowDefinition>
+            <RowDefinition Height=".3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <DockPanel Background="Gold">
+
+            <DockPanel.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="50"></Setter>
+                    <Setter Property="Margin" Value="20,10"></Setter>
+                    <Setter Property="FontWeight" Value="SemiBold"></Setter>
+                </Style>    
+            </DockPanel.Resources>
+            
+            <TextBlock DockPanel.Dock="Right">
+                2
+            </TextBlock>
+            <TextBlock>
+                WPF
+            </TextBlock>
+        </DockPanel>
+
+        <UniformGrid Grid.Row="1" Rows="1">
+            
+            <Border BorderBrush="LightGray" BorderThickness="0,0,0,1">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource titulo}" >
+                        Abrir un elemento reciente
+                    </TextBlock>
+                    <TextBlock><Hyperlink>Archivo 1</Hyperlink> </TextBlock>
+                    <TextBlock><Hyperlink>Archivo 2</Hyperlink></TextBlock>
+                    <TextBlock><Hyperlink>Archivo 3</Hyperlink></TextBlock>
+                    <TextBlock><Hyperlink>Archivo 4</Hyperlink></TextBlock>
+                    <TextBlock><Hyperlink>Archivo 5</Hyperlink></TextBlock>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="LightGray" BorderThickness="1">
+                <StackPanel>
+                    <TextBlock Style="{StaticResource titulo}">Crear nuevo</TextBlock>
+                    <TextBlock>Nuevo documento</TextBlock>
+                    <TextBlock>Nueva imagen</TextBlock>
+                    <TextBlock Style="{StaticResource titulo}">Ayuda</TextBlock>
+                    <TextBlock>Informacion</TextBlock>
+                </StackPanel>
+            </Border>
+        </UniformGrid>
+        <StackPanel Grid.Row="2">
+            <TextBlock>- Repaso rapido</TextBlock>
+            <TextBlock>- Recursos</TextBlock>
+            <TextBlock>- Formacion autorizada</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
