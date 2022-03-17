@@ -1,0 +1,71 @@
+﻿<Window x:Class="ActividadTriggers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActividadTriggers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".8*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="1" Background="Green" Foreground="white" Padding="8">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="black"></Setter>
+                            
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            Agregar a carrito
+        </Button>
+        <Button Grid.Column="1" Grid.Row="1" Background="DarkRed" Foreground="white">Remover del carrito</Button>
+
+        <Image Source="https://m.media-amazon.com/images/I/814330STMeL._AC_SX466_.jpg">
+            <Image.Style>
+                <Style TargetType="Image">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=cmbColor, Path=SelectedItem.Content}" Value="Rojo">
+                            <Setter Property="Source" Value="https://http2.mlstatic.com/D_NQ_NP_759521-MLM28335524380_102018-O.jpg"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+
+        <StackPanel  Grid.Column="1" Margin="20" VerticalAlignment="Center">
+            <StackPanel.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="Gray" >
+                    </Setter>
+                    <Setter Property="FontSize" Value="18">
+                    </Setter>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock FontSize="28" FontWeight="SemiBold">
+                Arbol de Navidad Clasico
+            </TextBlock>
+            <TextBlock FontSize="16" Foreground="Gray">SIN DECORACIONES</TextBlock>
+            <TextBlock FontSize="14">$120</TextBlock>
+            <TextBlock FontSize="20" TextWrapping="Wrap">Luce tus decoraciones de navidad con este clasico arbol de navidad. Viene en colores verdes, blanco (nevado) o rojizo y en tres tamañanos a elegir</TextBlock>
+            <Label>Tamaño</Label>
+            <ComboBox SelectedIndex="0">
+                <ComboBoxItem>Mediano</ComboBoxItem>
+            </ComboBox>
+            <Label>Color:</Label>
+            <ComboBox SelectedIndex="0" Name="cmbColor">
+                <ComboBoxItem>Verde</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+</Window>

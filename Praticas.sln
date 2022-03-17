@@ -26,7 +26,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicio-Binding-1", "Ejer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContadorDigital", "ContadorDigital\ContadorDigital.csproj", "{A4B0F706-4C50-425E-8E37-11E6686F44FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triggers", "Triggers\Triggers.csproj", "{A7F5D580-2488-4115-A762-03CBBD91B43F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triggers", "Triggers\Triggers.csproj", "{A7F5D580-2488-4115-A762-03CBBD91B43F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActividadTriggers", "ActividadTriggers\ActividadTriggers.csproj", "{01258AEA-3427-4AAE-A71B-222EEAFBEA99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriggersActividad", "TriggersActividad\TriggersActividad.csproj", "{35FF1DE1-AC47-49FE-BF8E-FB6C6732116E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActividadJuego", "ActividadJuego\ActividadJuego.csproj", "{6919E667-8A98-4238-A027-40A2295A09A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +76,18 @@ Global
 		{A7F5D580-2488-4115-A762-03CBBD91B43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F5D580-2488-4115-A762-03CBBD91B43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F5D580-2488-4115-A762-03CBBD91B43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01258AEA-3427-4AAE-A71B-222EEAFBEA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01258AEA-3427-4AAE-A71B-222EEAFBEA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01258AEA-3427-4AAE-A71B-222EEAFBEA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01258AEA-3427-4AAE-A71B-222EEAFBEA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FF1DE1-AC47-49FE-BF8E-FB6C6732116E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FF1DE1-AC47-49FE-BF8E-FB6C6732116E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FF1DE1-AC47-49FE-BF8E-FB6C6732116E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FF1DE1-AC47-49FE-BF8E-FB6C6732116E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6919E667-8A98-4238-A027-40A2295A09A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6919E667-8A98-4238-A027-40A2295A09A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6919E667-8A98-4238-A027-40A2295A09A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6919E667-8A98-4238-A027-40A2295A09A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
