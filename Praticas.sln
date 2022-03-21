@@ -20,8 +20,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actividad-1", "Actividad-1"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tablero", "Tablero\Tablero.csproj", "{C8C8952E-4EAD-4E72-88BA-6ABB585F43EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContadorDigital", "ContadorDigital\ContadorDigital.csproj", "{B1CFAEFE-5C04-4672-9C64-F7BB06E4BD07}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,16 +50,13 @@ Global
 		{C8C8952E-4EAD-4E72-88BA-6ABB585F43EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8C8952E-4EAD-4E72-88BA-6ABB585F43EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8C8952E-4EAD-4E72-88BA-6ABB585F43EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B1CFAEFE-5C04-4672-9C64-F7BB06E4BD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B1CFAEFE-5C04-4672-9C64-F7BB06E4BD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B1CFAEFE-5C04-4672-9C64-F7BB06E4BD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B1CFAEFE-5C04-4672-9C64-F7BB06E4BD07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8C8952E-4EAD-4E72-88BA-6ABB585F43EA} = {70ED47B2-2805-4900-92AC-37E51DACDCB5}
+		{C6FB3E44-94F0-48C7-A043-8AA402E53607} = {70ED47B2-2805-4900-92AC-37E51DACDCB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30E1FCD6-00B8-43EC-AE5A-2CAC597999A0}
