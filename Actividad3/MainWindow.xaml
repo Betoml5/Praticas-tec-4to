@@ -1,0 +1,47 @@
+﻿<Window x:Class="Actividad3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.DataContext>
+        <local:Convertidor></local:Convertidor>
+    </Window.DataContext>
+    <Grid Margin="20">
+        
+            <Grid.Resources>
+            <Style TargetType="TextBox">
+                <Setter Property="Padding" Value="20"></Setter>
+                <Setter Property="Margin" Value="0,10"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock>Valor Binario:</TextBlock>
+            <TextBox Text="{Binding numeroBinario}"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock>Valor Decimal:</TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <UniformGrid Grid.Row="2" >
+            <Button Margin="0,0,10,0" Command="{Binding GenerarBinarioCommand}">Nuevo</Button>
+            <Button Margin="10,0,0,0">Verificar</Button>
+        </UniformGrid>
+    <TextBlock Grid.Row="3">El valor es incorrecto</TextBlock>
+    </Grid>
+</Window>
