@@ -11,6 +11,9 @@ namespace ContadorDigital
 {
     public class Contador : INotifyPropertyChanged
     {
+        public ICommand SumarCommand { get; set; }
+        public ICommand RestarCommand { get; set; }
+        public ICommand ResetarCommand { get; set; }
 
         int CountN;
 
@@ -29,6 +32,7 @@ namespace ContadorDigital
             CountN++;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
         }
+
         public void Restar()
         {
 
@@ -43,6 +47,7 @@ namespace ContadorDigital
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(null));
 
         }
+
         public void Resetar()
         {
             CountN = 0;
