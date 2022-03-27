@@ -22,7 +22,7 @@ namespace Actividad3
 
         public bool? Ganado { get; set; }
         public bool? JuegoIniciado { get; set; } = false;
-
+        
         public Convertidor()
         {
             GenerarBinarioCommand = new RelayCommand(GenerarBinario);
