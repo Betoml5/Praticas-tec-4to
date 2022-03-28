@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RibbonMenu.Pages"
         mc:Ignorable="d"
-        Title="ContadorWindow" Height="450" Width="800">
+        Title="ContadorWindow" Height="550" Width="800">
     <Window.DataContext>
         <local:Contador>
             

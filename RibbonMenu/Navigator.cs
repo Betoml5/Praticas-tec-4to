@@ -13,10 +13,8 @@ namespace RibbonMenu
     public class Navigator
     {
 
-        TableroWindow tableroWindow = new ();
-        ConvertidorWindow convertidorWindow = new ();  
-        CalculadoraWindow calculadoraWindow = new();  
-        ContadorWindow contadorWindow = new();
+        
+       
 
 
         public ICommand ShowTableroCommand { get; set; }
@@ -27,20 +25,28 @@ namespace RibbonMenu
 
         public void ShowTablero()
         {
+            TableroWindow tableroWindow = new();
             tableroWindow.Show();
+            
+
         }
 
         public void ShowConvertidor()
         {
+            ConvertidorWindow convertidorWindow = new();
             convertidorWindow.Show();
         }
 
         public void ShowCalculadora()
         {
+            CalculadoraWindow calculadoraWindow = new();
+
             calculadoraWindow.Show();
         }
         public void ShowContador()
         {
+            ContadorWindow contadorWindow = new();
+
             contadorWindow.Show();
         }
 

@@ -10,34 +10,34 @@
     <Window.DataContext>
         <local:Navigator></local:Navigator>
     </Window.DataContext>
-    
-    <Grid>
+
+    <Grid Background="#2C3333">
         <Grid.RowDefinitions>
             <RowDefinition Height=".3*"/>
             <RowDefinition Height=".7*"/>
         </Grid.RowDefinitions>
         
         <Ribbon SelectedIndex="0" Background="#2C3333">
-            <RibbonTab Header="Unidad 1" >
+            <RibbonTab Header="Unidad 1"  >
                 <RibbonGroup  Foreground="Black">
-                    <RibbonButton LargeImageSource="https://i.postimg.cc/R0cwsSzP/scoreboard.png" Label="Tablero Deportivo" Command="{Binding ShowTableroCommand}">
+                    <RibbonButton  LargeImageSource="https://i.postimg.cc/MGh4Q2k0/score.png" Label="Tablero Deportivo" Command="{Binding ShowTableroCommand}">
                     </RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup x:Name="rbActividad2" Foreground="Black">
-                    <RibbonButton LargeImageSource="https://cdn-icons-png.flaticon.com/128/6134/6134806.png" Label="Contador Digital"  Foreground="Black" Command="{Binding ShowContadorCommand}"></RibbonButton>
+                    <RibbonButton LargeImageSource="https://i.postimg.cc/qRTwrkVF/counter.png" Label="Contador Digital"  Foreground="Black" Command="{Binding ShowContadorCommand}"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup x:Name="rbActividad3"   Foreground="Black">
-                    <RibbonButton LargeImageSource="https://i.postimg.cc/Rhr5MLYC/codigo-binario.png" Label="Aprende Binario"  Foreground="Black" Command="{Binding ShowConvertidorCommand}"></RibbonButton>
+                    <RibbonButton LargeImageSource="https://i.postimg.cc/Hn3B3FNh/binary.png" Label="Aprende Binario"  Foreground="Black" Command="{Binding ShowConvertidorCommand}"></RibbonButton>
                 </RibbonGroup>
                 <RibbonGroup x:Name="rbActividad4"  Foreground="black">
-                    <RibbonButton LargeImageSource="https://i.postimg.cc/ydZtrS8M/keys.png" Label="Suma y resta de fracciones" Command="{Binding ShowCalculadoraCommand}"></RibbonButton>
+                    <RibbonButton LargeImageSource="https://i.postimg.cc/sgLHkd2F/calculator.png" Label="Suma y resta de fracciones" Command="{Binding ShowCalculadoraCommand}"></RibbonButton>
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>
 
 
        
-        
+            
 
         
     </Grid>
