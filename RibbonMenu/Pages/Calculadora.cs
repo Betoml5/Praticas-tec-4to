@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace CalculadoraFracciones
+namespace RibbonMenu.Pages
 {
     public class Calculadora:INotifyPropertyChanged
     {

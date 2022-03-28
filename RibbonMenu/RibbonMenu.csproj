@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\bg2.jpg" />
+    <None Remove="Pages\clock.png" />
+    <None Remove="Pages\mexico.png" />
+    <None Remove="Pages\real.png" />
+    <None Remove="Pages\santos.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Actividad3\Actividad3.csproj" />
+    <ProjectReference Include="..\CalculadoraFracciones\CalculadoraFracciones.csproj" />
+    <ProjectReference Include="..\ContadorDigital\ContadorDigital.csproj" />
+    <ProjectReference Include="..\Tablero\Tablero.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pages\bg2.jpg" />
+    <Resource Include="Pages\clock.png" />
+    <Resource Include="Pages\mexico.png" />
+    <Resource Include="Pages\real.png" />
+    <Resource Include="Pages\santos.png" />
+  </ItemGroup>
+
+</Project>

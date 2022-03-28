@@ -36,7 +36,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActividadJuego", "Actividad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad3", "Actividad3\Actividad3.csproj", "{5C2753FC-9AC9-4127-8ADD-77A68C9A93B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraFracciones", "CalculadoraFracciones\CalculadoraFracciones.csproj", "{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFracciones", "CalculadoraFracciones\CalculadoraFracciones.csproj", "{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RibbonMenu", "RibbonMenu\RibbonMenu.csproj", "{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +102,10 @@ Global
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

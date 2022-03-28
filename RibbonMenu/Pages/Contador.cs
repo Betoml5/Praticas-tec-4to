@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace ContadorDigital
+namespace RibbonMenu.Pages
 {
     public class Contador : INotifyPropertyChanged
     {
