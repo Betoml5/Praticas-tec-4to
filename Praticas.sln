@@ -36,7 +36,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActividadJuego", "Actividad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad3", "Actividad3\Actividad3.csproj", "{5C2753FC-9AC9-4127-8ADD-77A68C9A93B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraFracciones", "CalculadoraFracciones\CalculadoraFracciones.csproj", "{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFracciones", "CalculadoraFracciones\CalculadoraFracciones.csproj", "{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Peliculas", "Peliculas\Peliculas.csproj", "{85627D22-C409-44F3-856C-922273FB4644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heros", "Heros\Heros.csproj", "{4C89D621-C3D7-4BCA-8C4D-87C119EA56B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +104,14 @@ Global
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93F437DE-EAEA-488E-A0C4-CCF9D99804FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85627D22-C409-44F3-856C-922273FB4644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85627D22-C409-44F3-856C-922273FB4644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85627D22-C409-44F3-856C-922273FB4644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85627D22-C409-44F3-856C-922273FB4644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C89D621-C3D7-4BCA-8C4D-87C119EA56B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C89D621-C3D7-4BCA-8C4D-87C119EA56B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C89D621-C3D7-4BCA-8C4D-87C119EA56B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C89D621-C3D7-4BCA-8C4D-87C119EA56B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

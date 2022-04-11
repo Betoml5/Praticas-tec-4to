@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Peliculas.Views.DetallesPeliculasView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Peliculas.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="800">
+    <StackPanel Margin="20">
+        <TextBlock HorizontalAlignment="Center" FontSize="40">Duro de matar</TextBlock>
+        <Image Height="300" Source="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/aa070c94fb5addd90d2c28aa1a987a99424ccde67f7d0155607db6d81ab0efa1._RI_V_TTW_.jpg"></Image>
+        <TextBlock HorizontalAlignment="Center" FontSize="25">
+            <TextBlock>1988</TextBlock>
+            <TextBlock>-
+                 Acción
+            </TextBlock>
+        </TextBlock>
+        <TextBlock>
+            Sinopsis
+        </TextBlock>
+    </StackPanel>
+</UserControl>

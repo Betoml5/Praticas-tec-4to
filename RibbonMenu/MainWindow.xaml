@@ -1,0 +1,31 @@
+﻿<Window x:Class="RibbonMenu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RibbonMenu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Ribbon x:Name="RibbonApp" SelectedIndex="0" Background="#2C3333">
+            <RibbonTab Header="Unidad 1" >
+                <RibbonGroup x:Name="rbActividad1" Header="Actividad 1"  Foreground="Black" >
+                    <RibbonButton LargeImageSource="images/score.png" Label="Tablero Deportivo" Foreground="black" ></RibbonButton>
+                </RibbonGroup>
+                <RibbonGroup x:Name="rbActividad2" Header="Actividad 2"  Foreground="Black">
+                    <RibbonButton LargeImageSource="images/counter.png" Label="Contador Digital"  Foreground="Black"></RibbonButton>
+                </RibbonGroup>
+                <RibbonGroup x:Name="rbActividad3" Header="Actividad 3"  Foreground="Black">
+                    <RibbonButton LargeImageSource="images/binary-code.png" Label="Aprende Binario"  Foreground="Black"></RibbonButton>
+                </RibbonGroup>
+                <RibbonGroup x:Name="rbActividad4" Header="Actividad 4" Foreground="Black">
+                    <RibbonButton LargeImageSource="images/keys.png" Label="Suma y resta de fracciones"  Foreground="Black"></RibbonButton>
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+    </Grid>
+</Window>
