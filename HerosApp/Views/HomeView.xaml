@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="HerosApp.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HerosApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel Background="#1a2865">
+        <DockPanel.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="../Assets/#Futura Display BQ"></Setter>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontFamily" Value="../Assets/#Futura Display BQ"></Setter>
+            </Style>
+        </DockPanel.Resources>
+
+        <!--<Setter Property="FontFamily" Value="../Assets/#QuickSand Light"></Setter>-->
+
+        <TextBlock Foreground="#fde700" FontSize="48" DockPanel.Dock="Top" FontFamily="../Assets/#Futura Display BQ" TextAlignment="Center" VerticalAlignment="Center" >My Hero Academia App</TextBlock>
+        <ListBox DockPanel.Dock="Bottom" Background="	#1a2865" BorderThickness="0" Padding="0,20">
+            <ListBox.Resources>
+                <Style TargetType="Image">
+                    <Setter Property="Width" Value="300"></Setter>
+                    <Setter Property="Width" Value="300"></Setter>
+                </Style>
+            </ListBox.Resources>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
+        </ListBox>
+        <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+            <Button Background="#F6F54D" Content="Agregar Heroe"  Padding="14" FontSize="24" Command="{Binding ChangeViewCommand}" CommandParameter="create">
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
+                </Button.BitmapEffect>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="8"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+        </WrapPanel>
+        <Grid Margin="20,0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".3*"></ColumnDefinition>
+                <ColumnDefinition Width=".7*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0"  Width="600" Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock Grid.Column="1" VerticalAlignment="Center" Foreground="white" TextWrapping="Wrap" Padding="30" FontSize="18">All Might es el primer héroe más poderoso y el «símbolo de la paz» que inspiró a toda una generación de héroes, incluido Izuku Midoriya, a quien le pasó el One for All. All Might es conocido por su personalidad alegre y sonriente y su imagen pública como el héroe número uno indiscutible, pero su tiempo para el heroísmo cada vez se hacía más corto, un hecho conocido solo por Izuku. Su carrera como héroe llegó a su fin luego de una última pelea con All for One.</TextBlock>
+        </Grid>
+    </DockPanel>
+</UserControl>
