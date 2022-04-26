@@ -45,9 +45,7 @@ namespace HerosApp.ViewModels
             if (View == "create")
             {
                 Hero = new Hero();
-                
             }
-          
 
             PropertyChange();
         }

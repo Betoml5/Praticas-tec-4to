@@ -29,19 +29,19 @@
 
         </Grid.RowDefinitions>
 
-        <Image Grid.Column="0"   Width="600" Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image Grid.Column="0"   Width="600"  Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <WrapPanel  HorizontalAlignment="Center">
                 <TextBlock FontSize="24">Nombre:</TextBlock>
-                <TextBlock FontSize="24">All Might</TextBlock>
+                <TextBlock FontSize="24" Text="{Binding Hero.Name}">All Might</TextBlock>
             </WrapPanel>
             <WrapPanel HorizontalAlignment="Center">
                 <TextBlock FontSize="24">Don:</TextBlock>
-                <TextBlock FontSize="24">One For All</TextBlock>
+                <TextBlock FontSize="24" Text="{Binding Hero.Skill}">One For All</TextBlock>
             </WrapPanel>
             <WrapPanel HorizontalAlignment="Center">
                 <TextBlock FontSize="24">Edad:</TextBlock>
-                <TextBlock FontSize="24">Desconocido</TextBlock>
+                <TextBlock FontSize="24" Text="{Binding Hero.Age}">Desconocido</TextBlock>
             </WrapPanel>
             <WrapPanel HorizontalAlignment="Center">
                 <TextBlock FontSize="24">Url de imagen:</TextBlock>
