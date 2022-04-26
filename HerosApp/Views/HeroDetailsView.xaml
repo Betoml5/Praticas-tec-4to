@@ -28,7 +28,7 @@
 
 
         </Grid.RowDefinitions>
-                
+
         <Image Grid.Column="0"   Width="600" Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <WrapPanel  HorizontalAlignment="Center">

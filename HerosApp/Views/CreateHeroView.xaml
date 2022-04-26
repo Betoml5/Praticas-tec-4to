@@ -34,7 +34,7 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48">Crear Heroe</TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48" >Crear Heroe</TextBlock>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label>Nombre del Heroe</Label>
             <TextBox Text="{Binding Hero.Name}"></TextBox>
@@ -61,7 +61,7 @@
                     <Setter Property="FontSize" Value="24"></Setter>
                 </Style>
             </WrapPanel.Resources>
-            <Button Width="300" >Crear</Button>
+            <Button Width="300" Command="{Binding CreateCommand}" >Crear</Button>
             <Button Width="370" Command="{Binding CancelCommand}">
                 Cancelar
             </Button>
