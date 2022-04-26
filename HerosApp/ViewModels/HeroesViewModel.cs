@@ -26,12 +26,15 @@ namespace HerosApp.ViewModels
         public ICommand ChangeViewCommand { get; set; }
         public ICommand CancelCommand { get; set; }
 
+        public ICommand CreateCommand { get; set; }
+
 
         public HeroesViewModel()
         {
             Open();
             ChangeViewCommand = new RelayCommand<string>(ChangeView);
             CancelCommand = new RelayCommand(Cancel);
+            CreateCommand = new RelayCommand(Create);
         }
 
 
@@ -44,6 +47,7 @@ namespace HerosApp.ViewModels
                 Hero = new Hero();
                 
             }
+          
 
             PropertyChange();
         }
@@ -60,6 +64,15 @@ namespace HerosApp.ViewModels
             File.WriteAllText("heroes.json", json);
         }
 
+        void Create()
+        {
+            if (Hero != null)
+            {
+                Heroes.Add(Hero);
+                ChangeView("home");
+                Save();
+            }
+        }
         void Open()
         {
             if (File.Exists("heroes.json"))

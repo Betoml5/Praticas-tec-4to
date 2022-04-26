@@ -16,6 +16,7 @@
             <ContentControl.Resources>
                 <local:CreateHeroView x:Key="create"></local:CreateHeroView>
                 <local:HomeView x:Key="home"></local:HomeView>
+                <local:HeroDetailsView x:Key="details"></local:HeroDetailsView>
             </ContentControl.Resources>
 
             <ContentControl.Style>
@@ -26,6 +27,9 @@
                         </DataTrigger>
                         <DataTrigger Binding="{Binding View}" Value="create">
                             <Setter Property="Content" Value="{StaticResource create}"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding View}" Value="details">
+                            <Setter Property="Content" Value="{StaticResource details}"></Setter>
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>

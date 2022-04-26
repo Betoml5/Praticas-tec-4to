@@ -19,7 +19,7 @@
         <!--<Setter Property="FontFamily" Value="../Assets/#QuickSand Light"></Setter>-->
 
         <TextBlock Foreground="#fde700" FontSize="48" DockPanel.Dock="Top" FontFamily="../Assets/#Futura Display BQ" TextAlignment="Center" VerticalAlignment="Center" >My Hero Academia App</TextBlock>
-        <ListBox DockPanel.Dock="Bottom" Background="	#1a2865" BorderThickness="0" Padding="0,20">
+        <ListBox DockPanel.Dock="Bottom" Background="	#1a2865" BorderThickness="0" Padding="0,20" ItemsSource="{Binding Heroes}" SelectedItem="{Binding Hero}">
             <ListBox.Resources>
                 <Style TargetType="Image">
                     <Setter Property="Width" Value="300"></Setter>
@@ -31,14 +31,24 @@
                     <StackPanel Orientation="Horizontal"/>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            <ListBoxItem >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                        <StackPanel>
+                            <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                            <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18" Text="{Binding Hero.Name}"></TextBlock>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <!--<ListBoxItem >
                 <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
-                    <StackPanel >
+                    <StackPanel>
                         <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
                         <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
                     </StackPanel>
                 </Border>
-            </ListBoxItem>
+            </ListBoxItem>-->
         </ListBox>
         <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
             <Button Background="#F6F54D" Content="Agregar Heroe"  Padding="14" FontSize="24" Command="{Binding ChangeViewCommand}" CommandParameter="create">
