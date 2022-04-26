@@ -21,10 +21,15 @@ namespace HerosApp.ViewModels
         public Hero? Hero { get; set; }
         public string View { get; set; } = "home";
 
+        //public string Error { get; set; } = "";
+
 
 
         public ICommand ChangeViewCommand { get; set; }
         public ICommand CancelCommand { get; set; }
+        //public ICommand CreateCommand { get; set; }
+
+
 
 
         public HeroesViewModel()
@@ -32,6 +37,7 @@ namespace HerosApp.ViewModels
             Open();
             ChangeViewCommand = new RelayCommand<string>(ChangeView);
             CancelCommand = new RelayCommand(Cancel);
+            //CreateCommand = new RelayCommand(Create);
         }
 
 
@@ -53,6 +59,36 @@ namespace HerosApp.ViewModels
             Hero = null;
             ChangeView("home");
         }
+
+        //void Create()
+        //{
+        //    if(Hero != null)
+        //    {
+        //        if (string.IsNullOrWhiteSpace(Hero.Name))
+        //        {
+        //            Error = "Escribe el nombre del heroe";
+        //            return;
+        //        }
+
+        //        if (string.IsNullOrWhiteSpace(Hero.Image))
+        //        {
+        //            Error = "Escribe el url de la imagen del heroe";
+        //            return;
+        //        }
+
+        //        //if(!Uri.TryCreate(Hero.Image, UriKind.Absolute, out var uri))
+        //        //{
+        //        //    Error = "Escribe una url valida";
+        //        //}
+
+
+        //        Heroes.Add(Hero);
+        //        ChangeView("home");
+        //        Save();
+        //        PropertyChange();
+
+        //    }
+        //}
         void Save()
         {
 

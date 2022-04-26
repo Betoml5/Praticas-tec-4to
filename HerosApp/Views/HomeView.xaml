@@ -39,6 +39,46 @@
                     </StackPanel>
                 </Border>
             </ListBoxItem>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
+            <ListBoxItem >
+                <Border Background="#F6F54D" CornerRadius="999" Padding="24" BorderThickness="0" BorderBrush="Transparent">
+                    <StackPanel >
+                        <Image Height="70" Width="100" Source="https://static.wikia.nocookie.net/characters/images/9/98/Izuku_midoriya_hero_costume_gamma_action_pose.png/revision/latest?cb=20201227220910"/>
+                        <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18">Deku</TextBlock>
+                    </StackPanel>
+                </Border>
+            </ListBoxItem>
         </ListBox>
         <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
             <Button Background="#F6F54D" Content="Agregar Heroe"  Padding="14" FontSize="24" Command="{Binding ChangeViewCommand}" CommandParameter="create">

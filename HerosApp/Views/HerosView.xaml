@@ -9,13 +9,12 @@
     <Window.DataContext>
         <viewmodels:HeroesViewModel />
     </Window.DataContext>
-        <DockPanel Background="#1a2865">
-       
-
+    <DockPanel Background="#1a2865">
         <ContentControl>
             <ContentControl.Resources>
-                <local:CreateHeroView x:Key="create"></local:CreateHeroView>
                 <local:HomeView x:Key="home"></local:HomeView>
+                <local:CreateHeroView x:Key="create"></local:CreateHeroView>
+                <local:HeroDetailsView x:Key="details"></local:HeroDetailsView>
             </ContentControl.Resources>
 
             <ContentControl.Style>

@@ -37,19 +37,19 @@
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48">Crear Heroe</TextBlock>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label>Nombre del Heroe</Label>
-            <TextBox></TextBox>
+            <TextBox Text="{Binding Hero.Name}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label>Don</Label>
-            <TextBox></TextBox>
+            <TextBox Text="{Binding Hero.Skill}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Label>Imagen (URL)</Label>
-            <TextBox></TextBox>
+            <TextBox Text="{Binding Hero.Image}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
             <Label>Edad</Label>
-            <TextBox></TextBox>
+            <TextBox Text="{Binding Hero.Age}"></TextBox>
         </StackPanel>
         <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
             <WrapPanel.Resources > 
