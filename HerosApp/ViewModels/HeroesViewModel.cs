@@ -41,7 +41,6 @@ namespace HerosApp.ViewModels
         void ChangeView(string View)
         {
             this.View = View;
-
             if (View == "create")
             {
                 Hero = new Hero();

@@ -28,8 +28,9 @@
 
 
         </Grid.RowDefinitions>
+        <Image Grid.Column="0"   Width="600"  Source="{Binding Hero.Image}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-        <Image Grid.Column="0"   Width="600"  Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <!--<Image Grid.Column="0"   Width="600"  Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>-->
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <WrapPanel  HorizontalAlignment="Center">
                 <TextBlock FontSize="24">Nombre:</TextBlock>
@@ -43,10 +44,7 @@
                 <TextBlock FontSize="24">Edad:</TextBlock>
                 <TextBlock FontSize="24" Text="{Binding Hero.Age}">Desconocido</TextBlock>
             </WrapPanel>
-            <WrapPanel HorizontalAlignment="Center">
-                <TextBlock FontSize="24">Url de imagen:</TextBlock>
-                <TextBlock FontSize="24">https:uri.png</TextBlock>
-            </WrapPanel>
+            
         </StackPanel>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
 

@@ -6,13 +6,12 @@
         xmlns:local="clr-namespace:HerosApp.Views" xmlns:viewmodels="clr-namespace:HerosApp.ViewModels"
         mc:Ignorable="d"
         Title="HerosView" Height="550" Width="800">
-    <Window.DataContext>
-        <viewmodels:HeroesViewModel />
-    </Window.DataContext>
-        <DockPanel Background="#1a2865">
-       
 
+    <DockPanel Background="#1a2865">
         <ContentControl>
+            <ContentControl.DataContext>
+                <viewmodels:HeroesViewModel />
+            </ContentControl.DataContext>
             <ContentControl.Resources>
                 <local:CreateHeroView x:Key="create"></local:CreateHeroView>
                 <local:HomeView x:Key="home"></local:HomeView>
