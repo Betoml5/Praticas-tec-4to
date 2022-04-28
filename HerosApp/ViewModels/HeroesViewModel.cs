@@ -21,12 +21,20 @@ namespace HerosApp.ViewModels
         public Hero? Hero { get; set; }
         public string View { get; set; } = "home";
 
+        int initialPosition;
+
 
 
         public ICommand ChangeViewCommand { get; set; }
         public ICommand CancelCommand { get; set; }
 
+        //TODO 
+        //Change command name to "CreateHeroCommand"
         public ICommand CreateCommand { get; set; }
+        public ICommand ViewHeroDetailsCommand { get; set; }
+        public ICommand ViewHeroEditCommand { get; set; }
+        public ICommand DeleteHeroCommand { get; set; }
+        public ICommand EditHeroCommand { get; set; }
 
 
         public HeroesViewModel()
@@ -35,6 +43,12 @@ namespace HerosApp.ViewModels
             ChangeViewCommand = new RelayCommand<string>(ChangeView);
             CancelCommand = new RelayCommand(Cancel);
             CreateCommand = new RelayCommand(Create);
+            ViewHeroDetailsCommand = new RelayCommand<Hero>(ViewHeroDetails);
+            ViewHeroEditCommand = new RelayCommand<Hero>(ViewHeroEdit);
+            DeleteHeroCommand = new RelayCommand(Delete);
+            EditHeroCommand = new RelayCommand(Edit);
+
+
         }
 
 
@@ -46,14 +60,50 @@ namespace HerosApp.ViewModels
                 Hero = new Hero();
             }
 
+            if (View == "edit")
+            {
+                if (Hero != null)
+                {
+                    //Save initial positon of Hero
+                    initialPosition = Heroes.IndexOf(Hero);
+
+                    var clon = new Hero()
+                    {
+                        Name = Hero.Name,
+                        Skill = Hero.Skill,
+                        Age = Hero.Age,
+                        Image = Hero.Image,
+                    };
+
+                    Hero = clon;
+                   
+                }
+            }
+
             PropertyChange();
         }
+
+        void ViewHeroDetails(Hero Hero)
+        {
+            this.Hero = Hero;
+            ChangeView("details");
+        }
+
+        void ViewHeroEdit(Hero Hero)
+        {
+            this.Hero = Hero;
+            ChangeView("edit");
+        }
+
+        
 
         private void Cancel()
         {
             Hero = null;
             ChangeView("home");
         }
+
+       
         void Save()
         {
 
@@ -68,6 +118,26 @@ namespace HerosApp.ViewModels
                 Heroes.Add(Hero);
                 ChangeView("home");
                 Save();
+            }
+        }
+
+        void Delete ()
+        {
+            if (Hero != null)
+            {
+                Heroes.Remove(Hero);
+                Save();
+                ChangeView("home");
+            }
+        }
+
+        void Edit()
+        {
+            if (Hero != null)
+            {
+                Heroes[initialPosition] = Hero;
+                Save();
+                ChangeView("home");
             }
         }
         void Open()

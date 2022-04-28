@@ -16,7 +16,7 @@
             </Style>
         </DockPanel.Resources>
         <TextBlock Foreground="#fde700" FontSize="48" DockPanel.Dock="Top" FontFamily="../Assets/#Futura Display BQ" TextAlignment="Center" VerticalAlignment="Center" >My Hero Academia App</TextBlock>
-        <ListBox DockPanel.Dock="Bottom" Background="	#1a2865" BorderThickness="0" Padding="0,20" ItemsSource="{Binding Heroes}" SelectedItem="{Binding Hero, Mode=TwoWay}">
+        <ListBox DockPanel.Dock="Bottom" Background="	#1a2865" BorderThickness="0" Padding="0,20" ItemsSource="{Binding Heroes}">
             <ListBox.Resources>
                 <Style TargetType="Image">
                     <Setter Property="Width" Value="300"></Setter>
@@ -34,7 +34,7 @@
                         <StackPanel>
                             <Image Height="100" Width="150" Source="{Binding Image}"    />
                             <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18" Text="{Binding Name}"></TextBlock>
-                            <Button BorderBrush="Transparent" Background="#1a2865" Content="Detalles"  Padding="8" FontSize="12" Foreground="white" Command="{Binding DataContext.ChangeViewCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="details">
+                            <Button BorderBrush="Transparent" Background="#1a2865" Content="Detalles"  Padding="8" FontSize="12" Foreground="white" Command="{Binding DataContext.ViewHeroDetailsCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="{Binding .}">
                                 <Button.BitmapEffect>
                                     <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
                                 </Button.BitmapEffect>
