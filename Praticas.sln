@@ -40,7 +40,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculadoraFracciones", "Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RibbonMenu", "RibbonMenu\RibbonMenu.csproj", "{2A5722D9-030C-4323-BCC1-DFDE6963BC6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerosApp", "HerosApp\HerosApp.csproj", "{7617B4B5-98F7-4B32-9E0C-BEDBF32126AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerosApp", "HerosApp\HerosApp.csproj", "{7617B4B5-98F7-4B32-9E0C-BEDBF32126AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5AD2DA23-B799-43E3-946B-965E3F167AC1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

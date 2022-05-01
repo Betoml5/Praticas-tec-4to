@@ -18,6 +18,8 @@ namespace HerosApp.ViewModels
 
         public ObservableCollection<Hero> Heroes { get; set; } = new ObservableCollection<Hero>();
 
+
+        public string Error { get; set; } = "";
         public Hero? Hero { get; set; }
         public string View { get; set; } = "home";
 
@@ -100,6 +102,7 @@ namespace HerosApp.ViewModels
         private void Cancel()
         {
             Hero = null;
+            Error = "";
             ChangeView("home");
         }
 
@@ -111,13 +114,45 @@ namespace HerosApp.ViewModels
             File.WriteAllText("heroes.json", json);
         }
 
+       void ShowErrorMessage(string ErrorMsg)
+        {
+            this.Error += ErrorMsg + "\n";
+            PropertyChange();
+        }
+
         void Create()
         {
+            Error = "";
             if (Hero != null)
             {
-                Heroes.Add(Hero);
-                ChangeView("home");
-                Save();
+
+                if (string.IsNullOrWhiteSpace(Hero.Name))
+                {
+                    ShowErrorMessage("Ingresa un nombre valido");
+                }
+
+                if (string.IsNullOrWhiteSpace(Hero.Skill))
+                {
+                    ShowErrorMessage("Ingresa un Don valido");
+                }
+
+                if (string.IsNullOrWhiteSpace(Hero.Age))
+                {
+                    ShowErrorMessage("Ingresa una edad valida");
+                }
+
+                if (!Uri.TryCreate(Hero.Image, UriKind.Absolute, out var uri))
+                {
+                    ShowErrorMessage("Ingresa una url valida");
+                }
+
+
+                if (Error == "")
+                {
+                    Heroes.Add(Hero);
+                    ChangeView("home");
+                    Save();
+                }
             }
         }
 

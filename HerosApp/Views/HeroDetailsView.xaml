@@ -57,7 +57,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#FF6363" Content="Eliminar"  Padding="14" FontSize="24" Command="{Binding DeleteHeroCommand}">
+            <Button Background="#FF6363" Content="Eliminar"  Padding="14" FontSize="24"  Click="Button_Click">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
                 </Button.BitmapEffect>
