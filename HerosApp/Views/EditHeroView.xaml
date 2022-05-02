@@ -32,6 +32,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
         </Grid.RowDefinitions>
 
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48" >Editar Heroe</TextBlock>
@@ -51,7 +53,10 @@
             <Label>Edad</Label>
             <TextBox Text="{Binding Hero.Age}"></TextBox>
         </StackPanel>
-        <WrapPanel Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="2" TextAlignment="Center" Text="{Binding Error}" FontSize="24" Foreground="red" FontWeight="SemiBold"></TextBlock>
+
+        <WrapPanel Grid.Row="4" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" >
             <WrapPanel.Resources >
                 <Style TargetType="Button">
                     <Setter Property="Padding" Value="18"></Setter>
@@ -62,6 +67,9 @@
                 </Style>
             </WrapPanel.Resources>
             <Button Width="300" Command="{Binding EditHeroCommand}" >Editar</Button>
+            <!-- //TODO
+            CAMBIAR EN LUGAR DE MANDAR AL HOME QUE MANDE AL MISMO HEROE QUE ESTABA. PERO QUE NO SE GUARDEN LOS CAMBIOS HECHOS.
+            -->
             <Button Width="370" Command="{Binding CancelCommand}">
                 Cancelar
             </Button>

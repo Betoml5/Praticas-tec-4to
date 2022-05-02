@@ -82,6 +82,8 @@ namespace HerosApp.ViewModels
                 }
             }
 
+            
+
             PropertyChange();
         }
 
@@ -168,11 +170,39 @@ namespace HerosApp.ViewModels
 
         void Edit()
         {
+
+            Error = "";
             if (Hero != null)
             {
-                Heroes[initialPosition] = Hero;
-                Save();
-                ChangeView("home");
+
+                if (string.IsNullOrWhiteSpace(Hero.Name))
+                {
+                    ShowErrorMessage("Ingresa un nombre valido");
+                }
+
+                if (string.IsNullOrWhiteSpace(Hero.Skill))
+                {
+                    ShowErrorMessage("Ingresa un Don valido");
+                }
+
+                if (string.IsNullOrWhiteSpace(Hero.Age))
+                {
+                    ShowErrorMessage("Ingresa una edad valida");
+                }
+
+                if (!Uri.TryCreate(Hero.Image, UriKind.Absolute, out var uri))
+                {
+                    ShowErrorMessage("Ingresa una url valida");
+                }
+
+                if (Error == "")
+                {
+                    Heroes[initialPosition] = Hero;
+                    Save();
+                    ChangeView("home");
+                }
+
+                   
             }
         }
         void Open()

@@ -28,12 +28,12 @@ namespace HerosApp.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            var vm = DataContext.herovm;
-            if(MessageBox.Show("¿Está seguro de eliminar el heroe","Confirme",
-                MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            {
-                herovm.DeleteHeroCommand.Execute(null);
-            }
+            //var vm = DataContext.herovm;
+            //if(MessageBox.Show("¿Está seguro de eliminar el heroe","Confirme",
+            //    MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            //{
+            //    herovm.DeleteHeroCommand.Execute(null);
+            //}
         }
     }
 }

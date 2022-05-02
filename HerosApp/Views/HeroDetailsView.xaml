@@ -16,6 +16,12 @@
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="../Assets/#Futura Display BQ"></Setter>
                 <Setter Property="Foreground" Value="#000"></Setter>
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Cursor" Value="Hand"/>
+                    </Trigger>
+                </Style.Triggers>
             </Style>
 
         </Grid.Resources>

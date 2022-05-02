@@ -17,6 +17,8 @@
                 <local:HomeView x:Key="home"></local:HomeView>
                 <local:HeroDetailsView x:Key="details"></local:HeroDetailsView>
                 <local:EditHeroView x:Key="edit"></local:EditHeroView>
+
+              
             </ContentControl.Resources>
 
             <ContentControl.Style>
