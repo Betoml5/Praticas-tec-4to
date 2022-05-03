@@ -32,7 +32,7 @@ namespace HerosApp.ViewModels
 
         //TODO 
         //Change command name to "CreateHeroCommand"
-        public ICommand CreateCommand { get; set; }
+        public ICommand CreateHeroCommand { get; set; }
         public ICommand ViewHeroDetailsCommand { get; set; }
         public ICommand ViewHeroEditCommand { get; set; }
         public ICommand DeleteHeroCommand { get; set; }
@@ -44,7 +44,7 @@ namespace HerosApp.ViewModels
             Open();
             ChangeViewCommand = new RelayCommand<string>(ChangeView);
             CancelCommand = new RelayCommand(Cancel);
-            CreateCommand = new RelayCommand(Create);
+            CreateHeroCommand = new RelayCommand(Create);
             ViewHeroDetailsCommand = new RelayCommand<Hero>(ViewHeroDetails);
             ViewHeroEditCommand = new RelayCommand<Hero>(ViewHeroEdit);
             DeleteHeroCommand = new RelayCommand(Delete);
@@ -82,21 +82,30 @@ namespace HerosApp.ViewModels
                 }
             }
 
-            
-
             PropertyChange();
         }
 
         void ViewHeroDetails(Hero Hero)
         {
+
+            
             this.Hero = Hero;
             ChangeView("details");
+
         }
 
         void ViewHeroEdit(Hero Hero)
         {
             this.Hero = Hero;
             ChangeView("edit");
+        }
+
+
+        //TODO
+        void GoBackToHeroDetails()
+        {
+            clon = Hero;
+            ChangeView("details");
         }
 
         

@@ -27,6 +27,8 @@ namespace HerosApp.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+            
 
             //var vm = DataContext.herovm;
             //if(MessageBox.Show("¿Está seguro de eliminar el heroe","Confirme",

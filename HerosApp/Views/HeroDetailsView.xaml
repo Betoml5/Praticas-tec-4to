@@ -39,21 +39,21 @@
         <!--<Image Grid.Column="0"   Width="600"  Source="https://www.pikpng.com/pngl/b/294-2945804_allmight-boku-no-hero-academia-all-might-png.png" VerticalAlignment="Center" HorizontalAlignment="Center"/>-->
         <StackPanel Grid.Row="1" VerticalAlignment="Center">
             <WrapPanel  HorizontalAlignment="Center">
-                <TextBlock FontSize="24">Nombre:</TextBlock>
+                <TextBlock FontSize="24">Nombre: </TextBlock>
                 <TextBlock FontSize="24" Text="{Binding Hero.Name}"></TextBlock>
             </WrapPanel>
             <WrapPanel HorizontalAlignment="Center">
-                <TextBlock FontSize="24">Don:</TextBlock>
+                <TextBlock FontSize="24">Don: </TextBlock>
                 <TextBlock FontSize="24" Text="{Binding Hero.Skill}"></TextBlock>
             </WrapPanel>
             <WrapPanel HorizontalAlignment="Center">
-                <TextBlock FontSize="24">Edad:</TextBlock>
+                <TextBlock FontSize="24">Edad:  </TextBlock>
                 <TextBlock FontSize="24" Text="{Binding Hero.Age}"></TextBlock>
             </WrapPanel>
             
         </StackPanel>
         <WrapPanel Grid.Row="2" HorizontalAlignment="Center">
-            <Button Background="#F6F54D" Content="Editar Heroe"  Padding="14" FontSize="24" Margin="0,0,10,0" Command="{Binding ViewHeroEditCommand}" CommandParameter="{Binding Hero}">
+            <Button Background="#F6F54D" Content="Editar Héroe"  Padding="14" FontSize="24" Margin="0,0,10,0" Command="{Binding ViewHeroEditCommand}" CommandParameter="{Binding Hero}">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
                 </Button.BitmapEffect>
@@ -63,7 +63,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Background="#FF6363" Content="Eliminar"  Padding="14" FontSize="24"  Click="Button_Click">
+            <Button Background="#FF6363" Content="Eliminar"  Padding="14" FontSize="24"  Command="{Binding DeleteHeroCommand}">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
                 </Button.BitmapEffect>

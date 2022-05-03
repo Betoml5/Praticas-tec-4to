@@ -13,13 +13,11 @@
             </Style>
             <Style TargetType="Button">
                 <Setter Property="FontFamily" Value="../Assets/#Futura Display BQ"></Setter>
-               
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Cursor" Value="Hand"></Setter>
-                        </Trigger>
-                    </Style.Triggers>
-             
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Cursor" Value="Hand"></Setter>
+                    </Trigger>
+                </Style.Triggers>
             </Style>
         </DockPanel.Resources>
         <TextBlock Foreground="#fde700" FontSize="48" DockPanel.Dock="Top" FontFamily="../Assets/#Futura Display BQ" TextAlignment="Center" VerticalAlignment="Center" >My Hero Academia App</TextBlock>
@@ -37,9 +35,9 @@
             </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border Background="#F6F54D" CornerRadius="999" Padding="12" BorderThickness="0" BorderBrush="Transparent">
-                        <StackPanel>
-                            <Image Height="100" Width="150" Source="{Binding Image}"    />
+                    <Border Background="#F6F54D" CornerRadius="999" Padding="12" BorderThickness="0" BorderBrush="Transparent" Cursor="Hand">
+                        <StackPanel >
+                            <Image Height="100" Width="150" Source="{Binding Image}" />
                             <TextBlock FontFamily="../Assets/#Futura Display BQ" Foreground="#000" TextAlignment="Center" FontSize="18" Text="{Binding Name}"></TextBlock>
                             <Button BorderBrush="Transparent" Background="#1a2865" Content="Detalles"  Padding="8" FontSize="12" Foreground="white" Command="{Binding DataContext.ViewHeroDetailsCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" CommandParameter="{Binding .}">
                                 <Button.BitmapEffect>
@@ -57,7 +55,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
-            <Button Background="#F6F54D" Content="Agregar Heroe"  Padding="14" FontSize="24" Command="{Binding ChangeViewCommand}" CommandParameter="create">
+            <Button Background="#F6F54D" Content="Agregar Héroe"  Padding="14" FontSize="24" Command="{Binding ChangeViewCommand}" CommandParameter="create">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="320" Softness="1" ShadowDepth="10" Opacity="0.5" />
                 </Button.BitmapEffect>

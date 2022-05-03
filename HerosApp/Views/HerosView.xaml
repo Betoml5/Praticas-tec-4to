@@ -10,7 +10,7 @@
     <DockPanel Background="#1a2865">
         <ContentControl>
             <ContentControl.DataContext>
-                <viewmodels:HeroesViewModel x:Name="herovm"></viewmodels:HeroesViewModel>
+                <viewmodels:HeroesViewModel x:Name="herovm" ></viewmodels:HeroesViewModel>
             </ContentControl.DataContext>
             <ContentControl.Resources>
                 <local:CreateHeroView x:Key="create"></local:CreateHeroView>

@@ -63,10 +63,11 @@
                     <Setter Property="FontSize" Value="24"></Setter>
                 </Style>
             </WrapPanel.Resources>
-            <Button Width="300" Command="{Binding CreateCommand}" >Crear</Button>
+            <Button Width="300" Command="{Binding CreateHeroCommand}" >Crear</Button>
             <Button Width="370" Command="{Binding CancelCommand}">
                 Cancelar
             </Button>
         </WrapPanel>
     </Grid>
 </UserControl>
+    
