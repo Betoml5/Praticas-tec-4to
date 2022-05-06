@@ -104,7 +104,6 @@ namespace HerosApp.ViewModels
         //TODO
         void GoBackToHeroDetails()
         {
-            clon = Hero;
             ChangeView("details");
         }
 
