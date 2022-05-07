@@ -35,9 +35,9 @@
 
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48" >Crear Heroe</TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fde700"  FontFamily="../Assets/#Futura Display BQ" FontSize="48" >Crear Héroe</TextBlock>
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label>Nombre del Heroe</Label>
+            <Label>Nombre del Héroe</Label>
             <TextBox Text="{Binding Hero.Name}"></TextBox>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
